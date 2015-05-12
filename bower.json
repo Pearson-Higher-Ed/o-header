@@ -1,0 +1,15 @@
+{
+  "name": "o-he-header",
+  "main": [
+    "main.scss",
+    "main.js"
+  ],
+  "ignore": [
+    "examples",
+    "test",
+    ".gitignore"
+  ],
+  "dependencies": {
+    "o-assets": ">=0.4.1 <3"
+  }
+}
