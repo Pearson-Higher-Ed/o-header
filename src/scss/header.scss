@@ -22,19 +22,24 @@
 
 // Primary container
 .o-he-header__primary {
+  position: relative;
   width: 100%;
   overflow: hidden;
 }
 
 // Containers within the primary container
+.o-he-header__primary__left,
+.o-he-header__primary__right {
+  position: relative;
+  width: 50%;
+}
+
 .o-he-header__primary__left {
   float: left;
-  width: 50%;
 }
 
 .o-he-header__primary__right {
   float: right;
-  width: 50%;
 }
 
 // Collapsible container
