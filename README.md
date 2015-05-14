@@ -17,6 +17,16 @@ The header provides the following content containers:
 * Primary: Left
 * Primary: Right
 
+## Fixed
+
+To fix the header to the top of the page, add the `o-he-header--fixed` class:
+
+```html
+<header class="o-he-header o-he-header--fixed"></header>
+```
+
+You will need to adjust the top margin of the main content to accommodate the header's height, which is defined by the `$o-he-header-height` Sass variable.
+
 ## Logos
 
 To add the Pearson logo, use the following markup:
