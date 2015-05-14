@@ -6,6 +6,7 @@
 // Default styling for header nav elements
 .o-he-header nav,
 .o-he-header__nav {
+  float: left;
   height: $o-he-header-height;
   overflow: hidden;
 }
