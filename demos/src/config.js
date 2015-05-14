@@ -1,6 +1,6 @@
 module.exports = {
   "options": {
-    "sass": "demos/src/demo.scss",
+    "sass": "demos/src/scss/demo.scss",
     "bodyClasses": "o-hoverable-on",
     "template": "main.mustache",
     "data": {
@@ -10,11 +10,12 @@ module.exports = {
   "demos": [
    {
       "name": "scaffold",
+      "sass": "demos/src/scss/scaffold.scss",
       "data": {
         "o-he-header": {
           "primary": {
-            "left": "LEFT CONTENT",
-            "right": "RIGHT CONTENT"
+            "left": require('fs').readFileSync('demos/src/html/scaffold/primary.left.html'),
+            "right": require('fs').readFileSync('demos/src/html/scaffold/primary.right.html')
           }
         }
       }
