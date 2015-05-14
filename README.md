@@ -29,6 +29,16 @@ To add the Pearson logo, use the following markup:
 </div>
 ```
 
+## Tagline
+
+To add the tagline, use the following markup:
+
+```html
+<div class="o-he-header__tagline o-he-header__tagline--always-learning"></div>
+```
+
+The element should also be floated right.
+
 ## License
 
 This software is published by Pearson Education under the [MIT license](http://opensource.org/licenses/MIT).

@@ -25,8 +25,8 @@ module.exports = {
       "data": {
         "o-he-header": {
           "primary": {
-            "left": "<div class=\"o-he-header__logo o-he-header__logo--pearson\"></div>",
-            "right": "<div class=\"o-he-header__tagline o-he-header__tagline--always-learning\"><span>Always Learning</span></div>"
+            "left": "<div class=\"o-he-header__brand\"><div class=\"o-he-header__logo o-he-header__logo--pearson\"></div></div>",
+            "right": "<div class=\"o-he-header__tagline o-he-header__tagline--always-learning pull-right\"></div>"
           }
         }
       }
