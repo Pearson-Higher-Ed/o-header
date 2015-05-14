@@ -24,6 +24,9 @@ module.exports = {
       "name": "basic",
       "data": {
         "o-he-header": {
+          "container": {
+            "extra-classes": "demo__container"
+          },
           "primary": {
             "left": "<div class=\"o-he-header__brand\"><div class=\"o-he-header__logo o-he-header__logo--pearson\"></div></div>",
             "right": "<div class=\"o-he-header__tagline o-he-header__tagline--always-learning pull-right\"></div>"
