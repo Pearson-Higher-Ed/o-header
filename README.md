@@ -1,4 +1,4 @@
-# o-he-header
+# o-he-header [![Build Status](https://travis-ci.org/aarmour/o-he-header.svg)](https://travis-ci.org/aarmour/o-he-header)
 
 Responsive page header.
 
