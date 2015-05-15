@@ -5,5 +5,5 @@
 
 /// Helper function for resolving asset paths
 @function oHeHeaderAsset($asset) {
-  @return oAssetsResolve($asset, o-he-header);
+	@return oAssetsResolve($asset, o-he-header);
 }
