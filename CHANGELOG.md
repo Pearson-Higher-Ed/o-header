@@ -1,3 +1,45 @@
+<a name"0.1.0"></a>
+## 0.1.0 (2015-05-22)
+
+
+#### Features
+
+* **header:** highlight link when focused ([fc60b603](https://github.com/aarmour/o-he-header/commit/fc60b603))
+* **nav:** improve nav support ([6758aa66](https://github.com/aarmour/o-he-header/commit/6758aa66))
+
+
+#### Breaking Changes
+
+* nav elements must add .o-he-header__nav and
+.o-he-header__nav-item classes.
+
+To migrate existing markup:
+
+Before:
+
+```html
+<nav>
+  <ul>
+    <li><a href="#">Foo</a></li>
+    <li><a href="#">Bar</a></li>
+  </ul>
+</nav>
+```
+
+After:
+
+```html
+<nav class="o-he-header__nav">
+  <ul>
+    <li class="o-he-header__nav-item"><a href="#">Foo</a></li>
+    <li class="o-he-header__nav-item"><a href="#">Bar</a></li>
+  </ul>
+</nav>
+```
+
+ ([6758aa66](https://github.com/aarmour/o-he-header/commit/6758aa66))
+
+
 <a name"0.0.2"></a>
 ### 0.0.2 (2015-05-19)
 
