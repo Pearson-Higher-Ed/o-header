@@ -4,34 +4,31 @@
 ////
 
 // Default styling for header nav elements
-.o-he-header nav,
 .o-he-header__nav {
 	float: left;
 	height: $o-he-header-height;
-	overflow: hidden;
 }
 
-.o-he-header nav ul,
-.o-he-header__nav {
+.o-he-header__nav > ul {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
 	list-style: none;
 }
 
-.o-he-header nav li,
-.o-he-header__nav li {
+.o-he-header__nav-item {
 	float: left;
 	height: $o-he-header-height;
 	border-left: solid 1px $o-he-header-item-border-color;
 }
 
-.o-he-header nav li:last-child,
-.o-he-header__nav li:last-child {
-	border-right: solid 1px $o-he-header-item-border-color;
+.o-he-header__nav-item > a {
+	padding: $o-he-header-nav-link-padding;
+	line-height: $o-he-header-height;
 }
 
-.o-he-header nav a {
+// Nav dropdown-menu
+.o-he-header__nav-dropdown-menu > a {
 	padding: $o-he-header-nav-link-padding;
 	line-height: $o-he-header-height;
 }
