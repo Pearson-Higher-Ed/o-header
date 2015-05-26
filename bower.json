@@ -1,8 +1,7 @@
 {
   "name": "o-he-header",
   "main": [
-    "main.scss",
-    "main.js"
+    "main.scss"
   ],
   "ignore": [
     "examples",
