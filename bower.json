@@ -13,6 +13,7 @@
   	"type": "git",
   	"url": "https://github.com/aarmour/o-he-header.git"
 	},
+  "license": "MIT",
   "dependencies": {
     "o-assets": ">=0.4.1 <3"
   }
