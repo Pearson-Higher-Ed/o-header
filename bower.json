@@ -1,5 +1,5 @@
 {
-  "name": "o-he-header",
+  "name": "o-header",
   "main": [
     "main.scss"
   ],
@@ -11,7 +11,7 @@
   ],
   "repository": {
   	"type": "git",
-  	"url": "https://github.com/aarmour/o-he-header.git"
+  	"url": "https://github.com/aarmour/o-header.git"
 	},
   "license": "MIT",
   "dependencies": {

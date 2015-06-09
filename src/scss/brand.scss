@@ -1,10 +1,10 @@
 ////
-/// @group o-he-header
-/// @link http://registry.origami.ft.com/components/o-he-header
+/// @group o-header
+/// @link http://registry.origami.ft.com/components/o-header
 ////
 
-.o-he-header__brand {
+.o-header__brand {
 	float: left;
-	height: $o-he-header-height;
-	padding: 0 $o-he-header-padding-horizontal;
+	height: $o-header-height;
+	padding: 0 $o-header-padding-horizontal;
 }

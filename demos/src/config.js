@@ -12,7 +12,7 @@ module.exports = {
 			"name": "scaffold",
 			"sass": "demos/src/scss/scaffold.scss",
 			"data": {
-				"o-he-header": {
+				"o-header": {
 					"primary": {
 						"left": require('fs').readFileSync('demos/src/html/scaffold/primary.left.html'),
 						"right": require('fs').readFileSync('demos/src/html/scaffold/primary.right.html')
@@ -23,13 +23,13 @@ module.exports = {
 		{
 			"name": "basic",
 			"data": {
-				"o-he-header": {
+				"o-header": {
 					"container": {
 						"extra-classes": "demo__container"
 					},
 					"primary": {
-						"left": "<div class=\"o-he-header__brand\"><div class=\"o-he-header__logo o-he-header__logo--pearson\"></div></div>",
-						"right": "<div class=\"o-he-header__tagline o-he-header__tagline--always-learning pull-right\"></div>"
+						"left": "<div class=\"o-header__brand\"><div class=\"o-header__logo o-header__logo--pearson\"></div></div>",
+						"right": "<div class=\"o-header__tagline o-header__tagline--always-learning pull-right\"></div>"
 					}
 				}
 			}
@@ -37,7 +37,7 @@ module.exports = {
 		{
 			"name": "navigation",
 			"data": {
-				"o-he-header": {
+				"o-header": {
 					"container": {
 						"extra-classes": "demo__container"
 					},

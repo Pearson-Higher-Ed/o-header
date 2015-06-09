@@ -2,7 +2,7 @@
     "description": "Pearson Higher Ed page header",
     "origamiType": "module",
     "origamiVersion": 1,
-    "support": "https://github.com/Financial-Times/o-he-header/issues",
+    "support": "https://github.com/aarmour/o-header/issues",
     "supportStatus": "experimental",
     "demos": [
         {

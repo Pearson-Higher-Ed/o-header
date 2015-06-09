@@ -1,18 +1,18 @@
 ////
-/// @group o-he-header
-/// @link http://registry.origami.ft.com/components/o-he-header
+/// @group o-header
+/// @link http://registry.origami.ft.com/components/o-header
 ////
 
 // Default styling for standard header logos
-.o-he-header__logo,
-.o-he-header__logo > img,
-.o-he-header__logo  a {
+.o-header__logo,
+.o-header__logo > img,
+.o-header__logo  a {
 	display: inline-block;
 	vertical-align: middle;
 }
 
 // Pearson logo
-.o-he-header__logo--pearson {
+.o-header__logo--pearson {
 	display: block;
 	width: 114px;
 	height: 44px;
