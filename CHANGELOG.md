@@ -1,3 +1,20 @@
+<a name"0.2.0"></a>
+## 0.2.0 (2015-06-09)
+
+
+#### Features
+
+* rename module to o-header ([e78cef51](https://github.com/aarmour/o-header/commit/e78cef51))
+
+
+#### Breaking Changes
+
+* the `he-` prefix was removed from the component name;
+the module is now `o-header`. This affects any namespaces that begin with the module name (CSS selectors, SASS variables, data- attributes, etc).
+
+ ([e78cef51](https://github.com/aarmour/o-header/commit/e78cef51))
+
+
 <a name"0.1.0"></a>
 ## 0.1.0 (2015-05-22)
 
