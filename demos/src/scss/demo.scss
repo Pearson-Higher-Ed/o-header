@@ -1,7 +1,7 @@
-@import '../../main';
+@import '../../../main';
 
 .demo__container {
-	max-width: 1200px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -11,8 +11,12 @@
 	text-align: justify;
 }
 
+.demo__icon-menu:before {
+	content: '\2630';
+}
+
 // Demo utilities
-.pull-right {
+.demo--pull-right {
 	// scss-lint:disable ImportantRule
 	float: right !important;
 }

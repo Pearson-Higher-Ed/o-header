@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="o-useragent-ie7 o-hoverable-on"> <![endif]-->
-<!--[if IE 8]>         <html class="o-useragent-ie8 o-hoverable-on"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="o-hoverable-on"> <!--<![endif]-->
+<html class="o-hoverable-on">
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -10,20 +8,26 @@
 	<script src="//polyfill.webservices.ft.com/v1/polyfill.min.js?features=default"></script>
 	<style>body { margin: 0; } .demo-js .o--if-nojs { display: none; }</style>
 	<script>(function(d) { d.className = d.className + ' demo-js'; })(document.documentElement);</script>
-	<link rel="stylesheet" href="/bundles/css?modules=o-header:/demos/src/scss/demo.scss" />
+	<link rel="stylesheet" href="/bundles/css?modules=o-header:/demos/src/scss/demo.scss,o-dropdown-menu,o-collapse" />
 </head>
-<body class="o-hoverable-on">
+<body>
 <header data-o-component="o-header" class="o-header">
+
   <div class="o-header__container demo__container">
-    <div class="o-header__primary">
-      <div class="o-header__primary__left">
-        <div class="o-header__brand"><div class="o-header__logo o-header__logo--pearson"></div></div>
-      </div>
-      <div class="o-header__primary__right">
-        <div class="o-header__tagline o-header__tagline--always-learning pull-right"></div>
-      </div>
-    </div>
+
+		<div class="o-header__head">
+			<div class="o-header__brand">
+	<div class="o-header__logo o-header__logo--pearson"></div>
+</div>
+<div class="o-header__tagline o-header__tagline--always-learning demo--pull-right"></div>
+
+		</div>
+
+
+
+
   </div>
+
 </header>
 
 <div class="demo__container">
@@ -35,7 +39,7 @@
 </div>
 
 
-
+<script src="/bundles/js?modules=o-header:/demos/src/demo.js,o-dropdown-menu,o-collapse"></script>
 <script src="//registry.origami.ft.com/embedapi?autoload=resize"></script>
 </body>
 </html>

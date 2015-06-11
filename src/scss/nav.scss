@@ -5,30 +5,81 @@
 
 // Default styling for header nav elements
 .o-header__nav {
-	float: left;
-	height: $o-header-height;
+	width: 100%;
+
+	@media (min-width: $o-header-grid-float-breakpoint) {
+		float: left;
+		width: auto;
+		height: $o-header-height;
+	}
+}
+
+.o-header__nav--right {
+	@media (min-width: $o-header-grid-float-breakpoint) {
+		float: right;
+	}
+}
+
+.o-header__nav a {
+	display: block;
+	padding: (($o-header-height - $o-header-nav-link-line-height) / 2) $o-header-nav-link-padding;
+	line-height: $o-header-nav-link-line-height;
+	outline-offset: -2px;
 }
 
 .o-header__nav > ul {
 	margin: 0;
 	padding: 0;
-	display: inline-block;
 	list-style: none;
+
+	@media (min-width: $o-header-grid-float-breakpoint) {
+		display: inline-block;
+	}
 }
 
 .o-header__nav-item {
-	float: left;
-	height: $o-header-height;
-	border-left: solid 1px $o-header-item-border-color;
+	border-bottom: solid 1px $o-header-item-border-color;
+
+	@media (min-width: $o-header-grid-float-breakpoint) {
+		float: left;
+		height: $o-header-height;
+		border-bottom: 0;
+		border-left: solid 1px $o-header-item-border-color;
+	}
 }
 
-.o-header__nav-item > a {
-	padding: $o-header-nav-link-padding;
-	line-height: $o-header-height;
-}
+// Dropdown menu
+.o-header__nav-dropdown-menu {
+	@media (max-width: $o-header-grid-float-breakpoint-max) {
 
-// Nav dropdown-menu
-.o-header__nav-dropdown-menu > a {
-	padding: $o-header-nav-link-padding;
-	line-height: $o-header-height;
+		.o-dropdown-menu__menu-items {
+			position: relative;
+			float: none;
+			margin-bottom: -1px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.o-dropdown-menu__menu-item > a {
+			padding: (($o-header-height - $o-header-nav-link-line-height) / 2) 35px;
+			line-height: $o-header-nav-link-line-height;
+		}
+
+		.o-dropdown-menu__divider {
+			display: none;
+		}
+
+		// Inverse
+		&.o-dropdown-menu--inverse {
+
+			.o-dropdown-menu__menu-items {
+				background-color: $o-header-nav-dropdown-menu-bg-inverse;
+			}
+
+			.o-dropdown-menu__menu-item {
+				border-bottom: solid 1px $o-header-nav-dropdown-menu-item-border-inverse;
+			}
+
+		}
+	}
 }

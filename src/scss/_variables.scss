@@ -12,6 +12,8 @@ $o-header-padding-horizontal: 15px !default;
 /// Point at which the header becomes uncollapsed
 /// @type {Number}
 $o-header-grid-float-breakpoint: 768px !default;
+/// @type {Number}
+$o-header-grid-float-breakpoint-max: $o-header-grid-float-breakpoint - 1 !default;
 
 $o-header-bg: #000000 !default;
 $o-header-text-color: #ffffff !default;
@@ -22,4 +24,12 @@ $o-header-link-color: #c2c2c2 !default;
 $o-header-link-hover-color: lighten($o-header-link-color, 18.5%) !default;
 
 // Nav
-$o-header-nav-link-padding: 10px 15px !default;
+$o-header-nav-link-line-height: 20px !default;
+$o-header-nav-link-padding: 15px !default;
+
+// Nav dropdown menu
+$o-header-nav-dropdown-menu-bg-inverse: #000000 !default;
+$o-header-nav-dropdown-menu-item-border-inverse: #353535 !default;
+
+// Collapse
+$o-header-collapse-bg: rgba(0, 0, 0, 0.85) !default;

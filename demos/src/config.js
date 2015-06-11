@@ -1,11 +1,20 @@
+'use strict';
+
+var fs = require('fs');
+
 module.exports = {
 	"options": {
+		"js": "demos/src/demo.js",
 		"sass": "demos/src/scss/demo.scss",
 		"bodyClasses": "o-hoverable-on",
 		"template": "main.mustache",
 		"data": {
-			"content": require('fs').readFileSync('demos/src/html/content.html')
-		}
+			"content": fs.readFileSync('demos/src/html/content.html')
+		},
+		"dependencies": [
+			"o-dropdown-menu",
+			"o-collapse"
+		]
 	},
 	"demos": [
 		{
@@ -13,10 +22,9 @@ module.exports = {
 			"sass": "demos/src/scss/scaffold.scss",
 			"data": {
 				"o-header": {
-					"primary": {
-						"left": require('fs').readFileSync('demos/src/html/scaffold/primary.left.html'),
-						"right": require('fs').readFileSync('demos/src/html/scaffold/primary.right.html')
-					}
+					"head": fs.readFileSync('demos/src/html/scaffold/head.html'),
+					"primary": fs.readFileSync('demos/src/html/scaffold/primary.html'),
+					"user": fs.readFileSync('demos/src/html/scaffold/user.html')
 				}
 			}
 		},
@@ -27,26 +35,22 @@ module.exports = {
 					"container": {
 						"extra-classes": "demo__container"
 					},
-					"primary": {
-						"left": "<div class=\"o-header__brand\"><div class=\"o-header__logo o-header__logo--pearson\"></div></div>",
-						"right": "<div class=\"o-header__tagline o-header__tagline--always-learning pull-right\"></div>"
-					}
+					"head": fs.readFileSync('demos/src/html/basic/head.html')
 				}
 			}
-		},
-		{
-			"name": "navigation",
-			"data": {
-				"o-header": {
-					"container": {
-						"extra-classes": "demo__container"
-					},
-					"primary": {
-						"left": require('fs').readFileSync('demos/src/html/navigation/primary.left.html'),
-						"right": require('fs').readFileSync('demos/src/html/navigation/primary.right.html')
-					}
-				}
-			}
-		}
+		}//,
+		// {
+		// 	"name": "responsive",
+		// 	"data": {
+		// 		"o-header": {
+		// 			"container": {
+		// 				"extra-classes": "demo__container"
+		// 			},
+		// 			"collapse": true,
+		// 			"head": fs.readFileSync('demos/src/html/responsive/head.html'),
+		// 			"primary": fs.readFileSync('demos/src/html/responsive/primary.html')
+		// 		}
+		// 	}
+		// }
 	]
 };
