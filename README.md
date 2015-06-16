@@ -1,4 +1,4 @@
-# o-header [![Build Status](https://travis-ci.org/aarmour/o-header.svg)](https://travis-ci.org/aarmour/o-header)
+# o-header [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/o-header.svg)](https://travis-ci.org/Pearson-Higher-Ed/o-header)
 
 Responsive page header.
 
