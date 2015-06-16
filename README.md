@@ -14,8 +14,9 @@ TODO
 
 The header provides the following content containers:
 
-* Primary: Left
-* Primary: Right
+* Head
+* Primary
+* User
 
 ## Fixed
 
