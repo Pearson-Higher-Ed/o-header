@@ -1,3 +1,31 @@
+<a name"0.3.0"></a>
+## 0.3.0 (2015-06-17)
+
+
+#### Features
+
+* new header regions ([914c11d0](https://github.com/Pearson-Higher-Ed/o-header/commit/914c11d0))
+
+
+#### Breaking Changes
+
+* 
+`o-header__primary__left` and `o-header__primary__right` have been
+replaced:
+
+```html
+<header data-o-component="o-header" class="o-header">
+  <div class="o-header__container">
+    <div class="o-header__head"></div>
+    <div class="o-header__primary"></div>
+    <div class="o-header__user"></div>
+  </div>
+</header>
+```
+
+ ([914c11d0](https://github.com/Pearson-Higher-Ed/o-header/commit/914c11d0))
+
+
 <a name"0.2.0"></a>
 ## 0.2.0 (2015-06-09)
 
