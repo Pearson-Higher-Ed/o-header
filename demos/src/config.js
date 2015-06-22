@@ -33,7 +33,7 @@ module.exports = {
 			"data": {
 				"o-header": {
 					"container": {
-						"extra-classes": "demo__container"
+						"extra-classes": "demo-container"
 					},
 					"head": fs.readFileSync('demos/src/html/basic/head.html')
 				}
@@ -44,7 +44,7 @@ module.exports = {
 		// 	"data": {
 		// 		"o-header": {
 		// 			"container": {
-		// 				"extra-classes": "demo__container"
+		// 				"extra-classes": "demo-container"
 		// 			},
 		// 			"collapse": true,
 		// 			"head": fs.readFileSync('demos/src/html/responsive/head.html'),
