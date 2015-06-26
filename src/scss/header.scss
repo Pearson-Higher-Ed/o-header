@@ -47,6 +47,13 @@
 .o-header__primary {
 	display: table-row-group;
 
+	&:after {
+		@media (max-width: $o-header-grid-float-breakpoint-max) {
+			content: '';
+			margin-left: -10000px;
+		}
+	}
+
 	@media (min-width: $o-header-grid-float-breakpoint) {
 		display: block;
 		float: left;
