@@ -45,15 +45,6 @@
 }
 
 .o-header__primary {
-	display: table-row-group;
-
-	&:after {
-		@media (max-width: $o-header-grid-float-breakpoint-max) {
-			content: '';
-			margin-left: -10000px;
-		}
-	}
-
 	@media (min-width: $o-header-grid-float-breakpoint) {
 		display: block;
 		float: left;
@@ -61,10 +52,6 @@
 }
 
 .o-header__user {
-	display: table-caption;
-	caption-side: top;
-	background: inherit;
-
 	@media (min-width: $o-header-grid-float-breakpoint) {
 		display: block;
 		float: right;
