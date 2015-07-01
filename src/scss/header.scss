@@ -104,6 +104,14 @@
 	}
 }
 
+// Appended to the body element to prevent scrolling when the collapsed
+// content is expanded in the mobile viewport
+.o-header__collapse--expanded {
+	@media (max-width: $o-header-grid-float-breakpoint-max) {
+		overflow: hidden;
+	}
+}
+
 .o-header__toggle {
 	float: right;
 	margin-right: $o-header-padding-horizontal;

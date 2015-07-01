@@ -1,6 +1,7 @@
 {
   "name": "o-header",
   "main": [
+    "main.js",
     "main.scss"
   ],
   "ignore": [
@@ -15,6 +16,7 @@
 	},
   "license": "MIT",
   "dependencies": {
+    "dom-delegate": "^2.0.0",
     "o-assets": ">=0.4.1 <3"
   }
 }
