@@ -61,7 +61,7 @@
 		}
 
 		.o-dropdown-menu__menu-item > a {
-			padding: (($o-header-height - $o-header-nav-link-line-height) / 2) 35px;
+			padding: (($o-header-height - $o-header-nav-link-line-height) / 2) $o-header-nav-link-padding;
 			line-height: $o-header-nav-link-line-height;
 		}
 
@@ -73,11 +73,11 @@
 		&.o-dropdown-menu--inverse {
 
 			.o-dropdown-menu__menu-items {
-				background-color: $o-header-nav-dropdown-menu-bg-inverse;
+				border: 0;
 			}
 
 			.o-dropdown-menu__menu-item {
-				border-bottom: solid 1px $o-header-nav-dropdown-menu-item-border-inverse;
+				background: $o-header-collapse-bg;
 			}
 
 		}

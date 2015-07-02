@@ -68,7 +68,7 @@
 	bottom: 0;
 	left: 0;
 	margin-top: $o-header-height;
-	background: rgba(0, 0, 0, 0.85);
+	background: $o-header-collapse-bg;
 
 	&.o-collapse {
 		display: none;
@@ -88,6 +88,19 @@
 		margin-top: 0;
 		float: right;
 		background: inherit;
+	}
+
+	// Dropdown menu
+	.o-dropdown-menu > a {
+		@media (max-width: $o-header-grid-float-breakpoint-max) {
+			display: none;
+		}
+	}
+
+	.o-dropdown-menu__menu-items {
+		@media (max-width: $o-header-grid-float-breakpoint-max) {
+			display: block;
+		}
 	}
 }
 
