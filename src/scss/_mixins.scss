@@ -1,9 +1,4 @@
 ////
 /// @group o-header
-/// @link http://registry.origami.ft.com/components/o-header
+/// @link https://origami.pearsoned.com/registry/components/o-header
 ////
-
-/// Helper function for resolving asset paths
-@function oHeHeaderAsset($asset) {
-	@return oAssetsResolve($asset, o-header);
-}
