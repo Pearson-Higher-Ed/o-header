@@ -1,3 +1,19 @@
+<a name"0.4.0"></a>
+## 0.4.0 (2015-07-10)
+
+
+#### Bug Fixes
+
+* overlay issue in Chrome when o-header__primary has no visible elements ([1123f6da](https://github.com/Pearson-Higher-Ed/o-header/commit/1123f6da))
+
+
+#### Features
+
+* update mobile menu styles ([c3be134d](https://github.com/Pearson-Higher-Ed/o-header/commit/c3be134d))
+* remove section re-ordering in the mobile view ([901ecf35](https://github.com/Pearson-Higher-Ed/o-header/commit/901ecf35))
+* add js module and support for disabling body scrolling when collapsible section is expanded ([a5741f9b](https://github.com/Pearson-Higher-Ed/o-header/commit/a5741f9b))
+
+
 <a name"0.3.0"></a>
 ## 0.3.0 (2015-06-17)
 
