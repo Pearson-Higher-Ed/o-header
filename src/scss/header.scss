@@ -42,6 +42,11 @@
 .o-header__primary,
 .o-header__user {
 	position: relative;
+	border-bottom: solid 1px $o-header-item-border-color;
+
+	@media (min-width: $o-header-grid-float-breakpoint) {
+		border: 0;
+	}
 }
 
 .o-header__primary {

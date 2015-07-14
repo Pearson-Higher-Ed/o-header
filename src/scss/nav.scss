@@ -38,12 +38,9 @@
 }
 
 .o-header__nav-item {
-	border-bottom: solid 1px $o-header-item-border-color;
-
 	@media (min-width: $o-header-grid-float-breakpoint) {
 		float: left;
 		height: $o-header-height;
-		border-bottom: 0;
 		border-left: solid 1px $o-header-item-border-color;
 	}
 }
