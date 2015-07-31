@@ -1,3 +1,17 @@
+<a name"0.5.0"></a>
+## 0.5.0 (2015-07-31)
+
+
+#### Bug Fixes
+
+* iOS scroll issue with auto-resizing address bar ([f409cea8](https://github.com/Pearson-Higher-Ed/o-header/commit/f409cea8))
+
+
+#### Features
+
+* mobile: remove border from nav items; add border to containers ([868a9600](https://github.com/Pearson-Higher-Ed/o-header/commit/868a9600))
+
+
 <a name"0.4.0"></a>
 ## 0.4.0 (2015-07-10)
 
