@@ -6,7 +6,6 @@ module.exports = {
 	"options": {
 		"js": "demos/src/demo.js",
 		"sass": "demos/src/scss/demo.scss",
-		"bodyClasses": "o-hoverable-on",
 		"template": "main.mustache",
 		"data": {
 			"content": fs.readFileSync('demos/src/html/content.html')
