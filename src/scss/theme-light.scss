@@ -1,0 +1,57 @@
+////
+/// @group o-header
+/// @link http://registry.origami.ft.com/components/o-header
+////
+
+.o-header--theme-light {
+	background-color: $o-header-bg-light;
+
+	.o-header__nav-item {
+		> a {
+			@include nav-link-light;
+		}
+	}
+
+	.o-header__nav-item--active {
+		background-color: $o-header-nav-link-active-bg-light;
+	}
+
+	.o-header__logo--pearson {
+		background-position: right -16px;
+	}
+
+	.o-header__tagline--always-learning {
+		background-position: 0 -16px;
+	}
+
+	.o-dropdown-menu {
+		> a {
+			@include nav-link-light;
+		}
+	}
+
+	.o-dropdown-menu--expanded {
+		> a::before {
+			background-color: $o-header-dropdown-menu-bg-light;
+			border-color: darken($o-header-dropdown-menu-bg-light, 10%);
+		}
+	}
+
+	.o-dropdown-menu__menu-items {
+		background-color: $o-header-dropdown-menu-bg-light;
+		border-color: $o-header-dropdown-menu-border-light;
+	}
+
+	.o-dropdown-menu__menu-item {
+		> a {
+			color: $o-header-link-color-light;
+
+			// scss-lint:disable NestingDepth
+			&:hover,
+			&:focus {
+				color: $o-header-dropdown-menu-hover-link-color-light;
+				background-color: $o-header-dropdown-menu-hover-bg-light;
+			}
+		}
+	}
+}

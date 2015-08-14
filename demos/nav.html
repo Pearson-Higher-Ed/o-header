@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<title>o-header: basic demo</title>
+	<title>o-header: nav demo</title>
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 	<script src="//polyfill.webservices.ft.com/v1/polyfill.min.js?features=default"></script>
 	<style>body { margin: 0; } .demo-js .o--if-nojs { display: none; }</style>
@@ -12,14 +12,68 @@
 </head>
 <body>
 <header class="o-header ">
-	<div class="o-header__container demo-container">
+	<div class="o-header__container ">
 		<section class="o-header__section">
-	<div class="o-header__brand">
+	<div class="o-header__brand o-header__viewport-phone-sm--hidden">
 		<div class="o-header__logo o-header__logo--pearson"></div>
 	</div>
+	<nav class="o-header__nav o-header__viewport-phone-sm--hidden o-header__viewport-phone--hidden">
+		<ul class="o-header__nav-items">
+			<li class="o-header__nav-item">
+				<a href="https://example.com">Link</a>
+			</li>
+			<li class="o-header__nav-item">
+				<div class="o-dropdown-menu">
+					<a href="#" id="dropdown-menu-1" class="o-dropdown-menu__toggle" data-toggle="dropdown-menu" aria-haspopup="true" aria-expanded="false">
+						Dropdown Menu
+					</a>
+					<ul class="o-dropdown-menu__menu-items" role="menu" aria-labelledby="dropdown-menu-1">
+						<li class="o-dropdown-menu__menu-item" role="presentation">
+							<a role="menuitem" tabindex="-1" href="https://example.com">Menu Item 1</a>
+						</li>
+						<li class="o-dropdown-menu__menu-item" role="presentation">
+							<a role="menuitem" tabindex="-1" href="https://example.com">Menu Item 2</a>
+						</li>
+						<li class="o-dropdown-menu__divider" role="presentation"></li>
+						<li class="o-dropdown-menu__menu-item" role="presentation">
+							<a role="menuitem" tabindex="-1" href="https://example.com">Menu Item 3</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
 </section>
-<section class="o-header__section o-header__section--right o-header__viewport-phone-sm--hidden">
-	<div class="o-header__tagline o-header__tagline--always-learning"></div>
+<section class="o-header__section o-header__section--right">
+	<nav class="o-header__nav">
+		<ul class="o-header__nav-items">
+			<li class="o-header__nav-item o-header__nav-item--active">
+				<a href="#">Active</a>
+			</li>
+			<li class="o-header__nav-item">
+				<a href="https://example.com">Link</a>
+			</li>
+			<li class="o-header__nav-item">
+				<div class="o-dropdown-menu o-dropdown-menu--right">
+					<a href="#" id="dropdown-menu-2" class="o-dropdown-menu__toggle" data-toggle="dropdown-menu" aria-haspopup="true" aria-expanded="false">
+						Dropdown Menu
+					</a>
+					<ul class="o-dropdown-menu__menu-items" role="menu" aria-labelledby="dropdown-menu-2">
+						<li class="o-dropdown-menu__menu-item" role="presentation">
+							<a role="menuitem" tabindex="-1" href="https://example.com">Menu Item 1</a>
+						</li>
+						<li class="o-dropdown-menu__menu-item" role="presentation">
+							<a role="menuitem" tabindex="-1" href="https://example.com">Menu Item 2</a>
+						</li>
+						<li class="o-dropdown-menu__divider" role="presentation"></li>
+						<li class="o-dropdown-menu__menu-item" role="presentation">
+							<a role="menuitem" tabindex="-1" href="https://example.com">Menu Item 3</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
 </section>
 
 	</div>

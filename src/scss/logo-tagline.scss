@@ -6,8 +6,12 @@
 .o-header__logo--pearson,
 .o-header__tagline--always-learning {
 	height: 16px;
-	margin-top: ($o-header-height - 16) / 2;
+	margin-top: ($o-header-height-mobile - 16) / 2;
 	background: url(oHeaderAsset('img/pearson-sprite.svg')) no-repeat;
+
+	@media (min-width: $o-header-desktop-min) {
+		margin-top: ($o-header-height - 16) / 2;
+	}
 }
 
 .o-header__logo--pearson {

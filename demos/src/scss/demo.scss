@@ -1,5 +1,9 @@
 @import '../../../main';
 
+html {
+	font-family: HelveticaNeue, sans-serif;
+}
+
 .demo-container {
 	max-width: 960px;
 	margin: 0 auto;
@@ -11,11 +15,9 @@
 	text-align: justify;
 }
 
-.demo-icon-menu:before {
-	content: '\2630';
-}
+.demo-form-group {
 
-.demo-pull-right {
-	// scss-lint:disable ImportantRule
-	float: right !important;
+	label {
+		vertical-align: middle;
+	}
 }

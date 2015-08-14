@@ -1,47 +1,7 @@
-<header class="o-header">
-
-  <div class="o-header__container {{o-header.container.extra-classes}}">
-
-		{{#o-header.head}}
-		<div class="o-header__head">
-			{{{o-header.head}}}
-		</div>
-		{{/o-header.head}}
-
-		{{#o-header.collapse}}
-		<div class="o-header__collapse" data-o-component="o-collapse">
-
-			{{#o-header.primary}}
-			<div class="o-header__primary">
-				{{{o-header.primary}}}
-			</div>
-			{{/o-header.primary}}
-
-			{{#o-header.user}}
-			<div class="o-header__user">
-				{{{o-header.user}}}
-			</div>
-			{{/o-header.user}}
-
-		</div>
-		{{/o-header.collapse}}
-
-		{{^o-header.collapse}}
-		{{#o-header.primary}}
-		<div class="o-header__primary">
-			{{{o-header.primary}}}
-		</div>
-		{{/o-header.primary}}
-
-		{{#o-header.user}}
-		<div class="o-header__user">
-			{{{o-header.user}}}
-		</div>
-		{{/o-header.user}}
-		{{/o-header.collapse}}
-
-  </div>
-
+<header class="o-header {{o-header.extra-classes}}">
+	<div class="o-header__container {{o-header.container.extra-classes}}">
+		{{{o-header.sections}}}
+	</div>
 </header>
 
 {{{content}}}

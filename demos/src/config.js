@@ -11,22 +11,11 @@ module.exports = {
 			"content": fs.readFileSync('demos/src/html/content.html')
 		},
 		"dependencies": [
-			"o-dropdown-menu",
-			"o-collapse"
+			"o-dropdown-menu@0.5.0",
+			"o-fonts@0.1.0"
 		]
 	},
 	"demos": [
-		{
-			"name": "scaffold",
-			"sass": "demos/src/scss/scaffold.scss",
-			"data": {
-				"o-header": {
-					"head": fs.readFileSync('demos/src/html/scaffold/head.html'),
-					"primary": fs.readFileSync('demos/src/html/scaffold/primary.html'),
-					"user": fs.readFileSync('demos/src/html/scaffold/user.html')
-				}
-			}
-		},
 		{
 			"name": "basic",
 			"data": {
@@ -34,22 +23,17 @@ module.exports = {
 					"container": {
 						"extra-classes": "demo-container"
 					},
-					"head": fs.readFileSync('demos/src/html/basic/head.html')
+					"sections": fs.readFileSync('demos/src/html/basic-sections.html')
 				}
 			}
-		}//,
-		// {
-		// 	"name": "responsive",
-		// 	"data": {
-		// 		"o-header": {
-		// 			"container": {
-		// 				"extra-classes": "demo-container"
-		// 			},
-		// 			"collapse": true,
-		// 			"head": fs.readFileSync('demos/src/html/responsive/head.html'),
-		// 			"primary": fs.readFileSync('demos/src/html/responsive/primary.html')
-		// 		}
-		// 	}
-		// }
+		},
+		{
+			"name": "nav",
+			"data": {
+				"o-header": {
+					"sections": fs.readFileSync('demos/src/html/nav-sections.html')
+				}
+			}
+		}
 	]
 };

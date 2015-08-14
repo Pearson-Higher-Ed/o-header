@@ -1,26 +1,28 @@
 ////
 /// @group o-header
-/// @link http://registry.origami.ft.com/components/o-header
+/// @link https://origami.pearsoned.com/registry/components/o-header
 ////
 
 .o-header {
+	box-sizing: border-box;
 	width: 100%;
+	min-height: $o-header-height-mobile;
 	background-color: $o-header-bg;
 	color: $o-header-text-color;
 
-	a {
-		text-decoration: none;
-		color: $o-header-link-color;
-		font-size: 16px;
-
-		&:hover,
-		&:focus {
-			color: $o-header-link-hover-color;
-		}
+	&::before,
+	&::after {
+		box-sizing: inherit;
+		display: table;
+		content: '';
 	}
 
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		height: $o-header-height;
+	&::after {
+		clear: both;
+	}
+
+	@media (min-width: $o-header-desktop-min) {
+		min-height: $o-header-height;
 	}
 }
 
@@ -29,99 +31,11 @@
 	top: 0;
 }
 
-// Containers
-.o-header__head {
-	height: $o-header-height;
-
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		height: auto;
-	}
+// Sections
+.o-header__section {
+	float: left;
 }
 
-.o-header__head,
-.o-header__primary,
-.o-header__user {
-	position: relative;
-	border-bottom: solid 1px $o-header-item-border-color;
-
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		border: 0;
-	}
-}
-
-.o-header__primary {
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		display: block;
-		float: left;
-	}
-}
-
-.o-header__user {
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		display: block;
-		float: right;
-	}
-}
-
-// Collapse
-.o-header__collapse {
-	width: 100%;
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin-top: $o-header-height;
-	background: $o-header-collapse-bg;
-
-	&.o-collapse {
-		display: none;
-	}
-
-	&.o-collapse--expanded {
-		display: table;
-	}
-
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		// Ensure that the collapsible content is always displayed
-		// above the breakpoint.
-		// scss-lint:disable ImportantRule
-		display: block !important;
-		width: auto;
-		position: relative;
-		margin-top: 0;
-		float: right;
-		background: inherit;
-	}
-
-	// Dropdown menu
-	.o-dropdown-menu > a {
-		@media (max-width: $o-header-grid-float-breakpoint-max) {
-			display: none;
-		}
-	}
-
-	.o-dropdown-menu__menu-items {
-		@media (max-width: $o-header-grid-float-breakpoint-max) {
-			display: block;
-		}
-	}
-}
-
-// Appended to the body element to prevent scrolling when the collapsed
-// content is expanded in the mobile viewport
-.o-header__collapse--expanded {
-	@media (max-width: $o-header-grid-float-breakpoint-max) {
-		overflow: hidden;
-	}
-}
-
-.o-header__toggle {
+.o-header__section--right {
 	float: right;
-	margin-right: $o-header-padding-horizontal;
-
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		display: none;
-	}
 }

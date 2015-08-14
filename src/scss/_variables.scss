@@ -1,35 +1,74 @@
 ////
 /// @group o-header
-/// @link http://registry.origami.ft.com/components/o-header
+/// @link https://origami.pearsoned.com/registry/components/o-header
 ////
 
-/// @type {Number}
-$o-header-height: 48px !default;
+// Color palettes
+// TODO: replace with o-colors
+$o-header-gray-5:  oHeaderMakeGrayColor(5%);
+$o-header-gray-10: oHeaderMakeGrayColor(10%);
+$o-header-gray-20: oHeaderMakeGrayColor(20%);
+$o-header-gray-30: oHeaderMakeGrayColor(30%);
+$o-header-gray-40: oHeaderMakeGrayColor(40%);
+$o-header-gray-50: oHeaderMakeGrayColor(50%);
+$o-header-gray-60: oHeaderMakeGrayColor(60%);
+$o-header-gray-70: oHeaderMakeGrayColor(70%);
+$o-header-gray-80: oHeaderMakeGrayColor(80%);
+$o-header-gray-90: oHeaderMakeGrayColor(90%);
 
-/// @type {Number}
+// Basics
+$o-header-height: 54px !default;
+$o-header-height-mobile: 44px !default;
 $o-header-padding-horizontal: 15px !default;
-
-/// Point at which the header becomes uncollapsed
-/// @type {Number}
-$o-header-grid-float-breakpoint: 768px !default;
-/// @type {Number}
-$o-header-grid-float-breakpoint-max: $o-header-grid-float-breakpoint - 1 !default;
-
 $o-header-bg: #000000 !default;
 $o-header-text-color: #ffffff !default;
-$o-header-item-border-color: #353535;
 
 // Links
-$o-header-link-color: #c2c2c2 !default;
-$o-header-link-hover-color: lighten($o-header-link-color, 18.5%) !default;
+$o-header-link-color: $o-header-gray-20 !default;
+$o-header-link-hover-color: $o-header-gray-5 !default;
 
 // Nav
+$o-header-nav-link-active-bg: $o-header-gray-70 !default;
 $o-header-nav-link-line-height: 20px !default;
 $o-header-nav-link-padding: 15px !default;
 
-// Nav dropdown menu
-$o-header-nav-dropdown-menu-bg-inverse: #000000 !default;
-$o-header-nav-dropdown-menu-item-border-inverse: #353535 !default;
+// Dropdown menus
+$o-header-dropdown-menu-bg: $o-header-gray-70 !default;
+$o-header-dropdown-menu-border-color: $o-header-gray-70 !default;
+$o-header-dropdown-menu-hover-bg: $o-header-gray-40 !default;
 
-// Collapse
-$o-header-collapse-bg: #272727 !default;
+
+/// Responsive breakpoints
+
+// Phone
+$o-header-phone-sm-max: 479px !default;
+$o-header-phone-min: $o-header-phone-sm-max + 1 !default;
+$o-header-phone-max: 767px !default;
+
+// Tablet
+$o-header-tablet-min: $o-header-phone-max + 1 !default;
+$o-header-tablet-max: 1023px !default;
+
+// Desktop
+$o-header-desktop-min: 1024px !default;
+
+// Width at which dropdown menu items fill the viewport width
+$o-header-dropdown-menu-items-breakpoint: 479px !default;
+
+
+/// Theme: light
+
+$o-header-bg-light: $o-header-gray-5 !default;
+
+// Links
+$o-header-link-color-light: #000000 !default;
+$o-header-link-hover-color-light: lighten($o-header-link-color-light, 35%) !default;
+
+// Nav
+$o-header-nav-link-active-bg-light: $o-header-gray-10 !default;
+
+// Dropdown menus
+$o-header-dropdown-menu-bg-light: $o-header-gray-10 !default;
+$o-header-dropdown-menu-border-light: $o-header-dropdown-menu-bg-light !default;
+$o-header-dropdown-menu-hover-link-color-light: #ffffff !default;
+$o-header-dropdown-menu-hover-bg-light: darken($o-header-dropdown-menu-bg-light, 10%) !default;

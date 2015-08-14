@@ -3,6 +3,10 @@
 /// @link https://origami.pearsoned.com/registry/components/o-header
 ////
 
+@function oHeaderMakeGrayColor($pct) {
+	@return darken(#ffffff, $pct);
+}
+
 /// Helper function for resolving asset paths
 @function oHeaderAsset($asset) {
 	@return oAssetsResolve($asset, o-header);

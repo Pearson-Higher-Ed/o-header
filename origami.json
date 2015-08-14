@@ -6,12 +6,12 @@
     "supportStatus": "experimental",
     "demos": [
         {
-            "path": "/demos/scaffold.html",
+            "path": "/demos/basic.html",
             "expanded": true,
             "description": ""
         },
         {
-            "path": "/demos/basic.html",
+            "path": "/demos/nav.html",
             "expanded": true,
             "description": ""
         }

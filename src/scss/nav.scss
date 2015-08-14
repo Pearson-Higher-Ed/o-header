@@ -1,82 +1,32 @@
 ////
 /// @group o-header
-/// @link http://registry.origami.ft.com/components/o-header
+/// @link https://origami.pearsoned.com/registry/components/o-header
 ////
 
-// Default styling for header nav elements
 .o-header__nav {
-	width: 100%;
-
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		float: left;
-		width: auto;
-		height: $o-header-height;
-	}
+	width: auto;
+	float: left;
 }
 
-.o-header__nav--right {
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		float: right;
-	}
-}
-
-.o-header__nav a {
-	display: block;
-	padding: (($o-header-height - $o-header-nav-link-line-height) / 2) $o-header-nav-link-padding;
-	line-height: $o-header-nav-link-line-height;
-	outline-offset: -2px;
-}
-
-.o-header__nav > ul {
+.o-header__nav-items {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		display: inline-block;
-	}
 }
 
 .o-header__nav-item {
-	@media (min-width: $o-header-grid-float-breakpoint) {
-		float: left;
+	float: left;
+	height: $o-header-height-mobile;
+
+	> a {
+		@include nav-link;
+	}
+
+	@media (min-width: $o-header-desktop-min) {
 		height: $o-header-height;
-		border-left: solid 1px $o-header-item-border-color;
 	}
 }
 
-// Dropdown menu
-.o-header__nav-dropdown-menu {
-	@media (max-width: $o-header-grid-float-breakpoint-max) {
-
-		.o-dropdown-menu__menu-items {
-			position: relative;
-			float: none;
-			margin-bottom: -1px;
-			padding-top: 0;
-			padding-bottom: 0;
-		}
-
-		.o-dropdown-menu__menu-item > a {
-			padding: (($o-header-height - $o-header-nav-link-line-height) / 2) $o-header-nav-link-padding;
-			line-height: $o-header-nav-link-line-height;
-		}
-
-		.o-dropdown-menu__divider {
-			display: none;
-		}
-
-		// Inverse
-		&.o-dropdown-menu--inverse {
-
-			.o-dropdown-menu__menu-items {
-				border: 0;
-			}
-
-			.o-dropdown-menu__menu-item {
-				background: $o-header-collapse-bg;
-			}
-
-		}
-	}
+.o-header__nav-item--active {
+	background: $o-header-nav-link-active-bg;
 }
