@@ -1,0 +1,25 @@
+////
+/// @group o-header
+/// @link http://registry.origami.ft.com/components/o-header
+////
+
+.o-header__logo--pearson,
+.o-header__tagline--always-learning {
+	height: 16px;
+	margin-top: ($o-header-height - 16) / 2;
+	background: url(oHeaderAsset('img/pearson-sprite.svg')) no-repeat;
+}
+
+.o-header__logo--pearson {
+	width: 100px;
+	background-position: right 0;
+}
+
+.o-header__tagline {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.o-header__tagline--always-learning {
+	width: 170px;
+}
