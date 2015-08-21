@@ -1,3 +1,13 @@
+<a name="0.6.1"></a>
+## [0.6.1](//compare/v0.6.0...v0.6.1) (2015-08-21)
+
+
+### Bug Fixes
+
+* **a11y:** dropdown menu item hover color contrast in default and light themes e751053
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](//compare/v0.5.0...v0.6.0) (2015-08-21)
 
