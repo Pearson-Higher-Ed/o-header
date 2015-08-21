@@ -92,7 +92,7 @@ To add the tagline, use the following markup:
 The header comes with a light theme:
 
 ```html
-<header class="o-header o-header--light"></header>
+<header class="o-header o-header--theme-light"></header>
 ```
 
 ## License
