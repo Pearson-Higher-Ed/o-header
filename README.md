@@ -4,19 +4,58 @@ Responsive page header.
 
 ## Quick start
 
-TODO
+Add the following markup to your page:
 
-## Browser support
+```html
+<header class="o-header"></header>
+```
 
-TODO
+## Sections
 
-## Element containers
+Sections can be added to the header using the `<section>` tag:
 
-The header provides the following content containers:
+```html
+<header class="o-header">
+	<div class="o-header__container">
+		<section class="o-header__section"></section>
+		<section class="o-header__section"></section>
+	</div>
+</header>
+```
 
-* Head
-* Primary
-* User
+Use `o-header__section--right` to float a section to the right:
+
+```html
+<header class="o-header">
+	<div class="o-header__container">
+		<section class="o-header__section"></section>
+		<section class="o-header__section o-header__section--right"></section>
+	</div>
+</header>
+```
+
+## Navs
+
+To add navigation items, use the `nav` tag with an unordered list:
+
+```html
+<header class="o-header">
+	<div class="o-header__container">
+		<section class="o-header__section">
+			<nav class="o-header__nav">
+				<ul class="o-header__nav-items">
+					<li class="o-header__nav-item">
+						<a href="https://example.com">Link</a>
+					</li>
+					<li class="o-header__nav-item">
+						<a href="https://example.com">Link</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+	</div>
+</header>
+```
 
 ## Fixed
 
@@ -26,15 +65,15 @@ To fix the header to the top of the page, add the `o-header--fixed` class:
 <header class="o-header o-header--fixed"></header>
 ```
 
-You will need to adjust the top margin of the main content to accommodate the header's height, which is defined by the `$o-header-height` Sass variable.
+You will need to adjust the top margin of the main content to accommodate the header's height, which is defined by the `$o-header-mobile-height` and `$o-header-height` Sass variables.
 
-## Logos
+## Logo
 
 To add the Pearson logo, use the following markup:
 
 ```html
 <div class="o-header__brand">
-  <a href="https://example.com/Pearson">
+  <a href="https://pearson.com">
     <div class="o-header__logo o-header__logo--pearson"></div>
   </a>
 </div>
@@ -48,7 +87,13 @@ To add the tagline, use the following markup:
 <div class="o-header__tagline o-header__tagline--always-learning"></div>
 ```
 
-The element should also be floated right.
+## Light theme
+
+The header comes with a light theme:
+
+```html
+<header class="o-header o-header--light"></header>
+```
 
 ## License
 
