@@ -11,9 +11,9 @@
     ".gitignore"
   ],
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/Pearson-Higher-Ed/o-header.git"
-	},
+    "type": "git",
+    "url": "https://github.com/Pearson-Higher-Ed/o-header.git"
+  },
   "license": "MIT",
   "dependencies": {
     "dom-delegate": "^2.0.0",
