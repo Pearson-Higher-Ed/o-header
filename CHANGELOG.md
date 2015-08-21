@@ -1,3 +1,14 @@
+<a name="0.6.0"></a>
+# [0.6.0](//compare/v0.5.0...v0.6.0) (2015-08-21)
+
+
+### Features
+
+* convert logo and tagline to SVG 3fd878d
+* redesign 7bd41da
+
+
+
 <a name"0.5.0"></a>
 ## 0.5.0 (2015-07-31)
 
