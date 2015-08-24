@@ -39,23 +39,21 @@
 		> a {
 			position: relative;
 			z-index: 0;
+			background-color: $o-header-dropdown-menu-bg;
 		}
 
 		> a::before {
 			position: absolute;
 			content: '';
 			z-index: -1;
-			height: $o-header-height-mobile - 2; // Header height minus the border thickness
 			width: 100%;
 			top: 0;
 			left: 0;
 			border-top: solid 2px lighten($o-header-dropdown-menu-bg, 10%);
-			background-color: $o-header-dropdown-menu-bg;
 		}
 
 		@media (min-width: $o-header-desktop-min) {
 			> a::before {
-				height: $o-header-height - 2; // Header height minus the border thickness
 				top: 0;
 			}
 		}

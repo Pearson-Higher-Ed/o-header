@@ -1,6 +1,16 @@
 @import '../../../main';
 
 html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
 	font-family: HelveticaNeue, sans-serif;
 }
 

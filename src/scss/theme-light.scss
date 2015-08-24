@@ -31,6 +31,10 @@
 	}
 
 	.o-dropdown-menu--expanded {
+		> a {
+			background-color: $o-header-dropdown-menu-bg-light;
+		}
+
 		> a::before {
 			background-color: $o-header-dropdown-menu-bg-light;
 			border-color: darken($o-header-dropdown-menu-bg-light, 10%);
