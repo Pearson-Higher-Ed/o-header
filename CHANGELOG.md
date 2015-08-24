@@ -1,3 +1,13 @@
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v0.6.1...v0.7.0) (2015-08-24)
+
+
+### Bug Fixes
+
+* dropdown menu toggle background color box-sizing bug ([5a43ac7](https://github.com/Pearson-Higher-Ed/o-header/commit/5a43ac7))
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](//compare/v0.6.0...v0.6.1) (2015-08-21)
 
