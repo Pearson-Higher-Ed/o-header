@@ -9,6 +9,7 @@
 	min-height: $o-header-height-mobile;
 	background-color: $o-header-bg;
 	color: $o-header-text-color;
+	font-size: $o-header-base-font-size;
 
 	&::before,
 	&::after {

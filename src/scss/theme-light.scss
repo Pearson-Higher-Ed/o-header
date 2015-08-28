@@ -35,9 +35,9 @@
 			background-color: $o-header-dropdown-menu-bg-light;
 		}
 
-		> a::before {
-			background-color: $o-header-dropdown-menu-bg-light;
-			border-color: darken($o-header-dropdown-menu-bg-light, 10%);
+		> a::after {
+			background-color: $o-header-bg-light;
+			border-bottom: solid 2px $o-header-gray-30;
 		}
 	}
 

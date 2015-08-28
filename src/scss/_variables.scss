@@ -22,6 +22,7 @@ $o-header-height-mobile: 44px !default;
 $o-header-padding-horizontal: 15px !default;
 $o-header-bg: #000000 !default;
 $o-header-text-color: #ffffff !default;
+$o-header-base-font-size: 14px !default;
 
 // Links
 $o-header-link-color: $o-header-gray-20 !default;
@@ -33,6 +34,7 @@ $o-header-nav-link-line-height: 20px !default;
 $o-header-nav-link-padding: 15px !default;
 
 // Dropdown menus
+$o-header-dropdown-menu-item-height: 44px !default;
 $o-header-dropdown-menu-bg: $o-header-gray-70 !default;
 $o-header-dropdown-menu-hover-bg: $o-header-gray-60 !default;
 
