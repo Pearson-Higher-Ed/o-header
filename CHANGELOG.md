@@ -1,3 +1,14 @@
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v0.8.0...v0.9.0) (2015-08-28)
+
+
+### Bug Fixes
+
+* match visual design spec ([85d2ff1](https://github.com/Pearson-Higher-Ed/o-header/commit/85d2ff1))
+* remove border from dropdown menu items container ([9c95d65](https://github.com/Pearson-Higher-Ed/o-header/commit/9c95d65))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v0.7.0...v0.8.0) (2015-08-24)
 
