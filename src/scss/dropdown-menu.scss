@@ -1,3 +1,5 @@
+// scss-lint:disable SelectorDepth
+
 ////
 /// @group o-header
 /// @link https://origami.pearsoned.com/registry/components/o-header
@@ -9,6 +11,10 @@
 
 		> a {
 			@include nav-link;
+		}
+
+		> a > span {
+			color: inherit;
 		}
 
 		@media (max-width: $o-header-dropdown-menu-items-breakpoint) {
