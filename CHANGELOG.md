@@ -1,3 +1,13 @@
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v0.9.0...v0.10.0) (2015-09-01)
+
+
+### Bug Fixes
+
+* span in dropdown menu trigger element should inherit color from parent ([e90feb7](https://github.com/Pearson-Higher-Ed/o-header/commit/e90feb7))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v0.8.0...v0.9.0) (2015-08-28)
 
