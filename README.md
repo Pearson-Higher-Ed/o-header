@@ -87,6 +87,10 @@ To add the tagline, use the following markup:
 <div class="o-header__tagline o-header__tagline--always-learning"></div>
 ```
 
+## z-index
+
+By default, the header's `z-index` property is set to 1000. This value can be changed by setting the `$o-header-z-index` SASS variable.
+
 ## Light theme
 
 The header comes with a light theme:

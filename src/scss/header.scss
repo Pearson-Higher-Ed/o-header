@@ -7,6 +7,7 @@
 	box-sizing: border-box;
 	width: 100%;
 	min-height: $o-header-height-mobile;
+	z-index: $o-header-z-index;
 	background-color: $o-header-bg;
 	color: $o-header-text-color;
 	font-size: $o-header-base-font-size;
