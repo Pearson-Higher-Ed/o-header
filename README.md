@@ -1,4 +1,4 @@
-# o-header [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/o-header.svg)](https://travis-ci.org/Pearson-Higher-Ed/o-header)
+# o-header [![Build Status](https://travis-ci.org/Pearson-Higher-Ed/o-header.svg)](https://travis-ci.org/Pearson-Higher-Ed/o-header) [![Coverage Status](https://coveralls.io/repos/Pearson-Higher-Ed/o-header/badge.svg?branch=master&service=github)](https://coveralls.io/github/Pearson-Higher-Ed/o-header?branch=master)
 
 Responsive page header.
 
