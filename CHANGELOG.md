@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v1.0.0...v1.1.0) (2015-09-15)
+
+
+### Features
+
+* add top-level anchor styles ([8a8cfb2](https://github.com/Pearson-Higher-Ed/o-header/commit/8a8cfb2))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v0.10.0...v1.0.0) (2015-09-15)
 
