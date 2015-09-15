@@ -12,6 +12,16 @@
 	color: $o-header-text-color;
 	font-size: $o-header-base-font-size;
 
+	a {
+		text-decoration: none;
+		color: $o-header-link-color;
+
+		&:hover,
+		&:focus {
+			color: $o-header-link-hover-color;
+		}
+	}
+
 	&::before,
 	&::after {
 		box-sizing: inherit;
