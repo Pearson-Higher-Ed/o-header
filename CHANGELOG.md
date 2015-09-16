@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/Pearson-Higher-Ed/o-header/compare/v1.1.0...v1.1.1) (2015-09-16)
+
+
+### Bug Fixes
+
+* box sizing ([4de6177](https://github.com/Pearson-Higher-Ed/o-header/commit/4de6177))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v1.0.0...v1.1.0) (2015-09-15)
 
