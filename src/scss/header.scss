@@ -3,6 +3,18 @@
 /// @link https://origami.pearsoned.com/registry/components/o-header
 ////
 
+// Box sizing baseline
+.o-header {
+	box-sizing: border-box;
+}
+
+.o-header *,
+.o-header *:before,
+.o-header *:after {
+	box-sizing: inherit;
+}
+
+// Base
 .o-header {
 	box-sizing: border-box;
 	width: 100%;
@@ -24,7 +36,6 @@
 
 	&::before,
 	&::after {
-		box-sizing: inherit;
 		display: table;
 		content: '';
 	}
