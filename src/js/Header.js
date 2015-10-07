@@ -1,7 +1,5 @@
 'use strict';
 
-var DomDelegate = require('dom-delegate');
-
 module.exports = Header;
 
 function Header(element) {
@@ -10,27 +8,15 @@ function Header(element) {
 	if (typeof element === 'string') element = document.querySelector(element);
 	if (!element) return;
 
-	var elementDelegate;
 
 	this.element = element;
-	this.destroy = destroy;
-	init();
-
-	function handleCollapseShow(e) {
-		document.body.classList.add('o-header__collapse--expanded');
-	}
-
-	function handleCollapseHide(e) {
-		document.body.classList.remove('o-header__collapse--expanded');
-	}
-
-	function init() {
-		elementDelegate = new DomDelegate(element);
-		elementDelegate.on('oCollapse.show', handleCollapseShow);
-		elementDelegate.on('oCollapse.hide', handleCollapseHide);
-	}
-
-	function destroy() {
-		elementDelegate.destroy();
-	}
+	this.init();
 }
+
+Header.prototype.init = function () {
+
+};
+
+Header.prototype.destroy = function () {
+
+};

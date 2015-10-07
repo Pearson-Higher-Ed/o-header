@@ -16,7 +16,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "dom-delegate": "^2.0.0",
     "o-assets": ">=0.4.1 <3"
   }
 }

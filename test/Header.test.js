@@ -37,38 +37,4 @@ describe('Header', function () {
 		header.destroy();
 	});
 
-	it('should add o-header__collapse--expanded to body when the collapse element is expanded', function () {
-		var headerEl = document.createElement('header');
-		document.body.appendChild(headerEl);
-		new Header(headerEl);
-
-		dispatchEvent(headerEl, 'oCollapse.show');
-
-		expect(document.body.classList.contains('o-header__collapse--expanded')).to.be(true);
-	});
-
-	it('should remove o-header__collapse--expanded from body when the collapse element is collapsed', function () {
-		var headerEl = document.createElement('header');
-		document.body.appendChild(headerEl);
-		new Header(headerEl);
-		document.body.classList.add('o-header__collapse--expanded');
-
-		dispatchEvent(headerEl, 'oCollapse.hide');
-
-		expect(document.body.classList.contains('o-header__collapse--expanded')).to.be(false);
-	});
-
 });
-
-function dispatchEvent(element, name, data) {
-	if (document.createEvent && element.dispatchEvent) {
-		var event = document.createEvent('Event');
-		event.initEvent(name, true, true);
-
-		if (data) {
-			event.detail = data;
-		}
-
-		element.dispatchEvent(event);
-	}
-}
