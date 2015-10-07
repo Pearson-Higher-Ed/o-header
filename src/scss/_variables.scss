@@ -58,6 +58,8 @@ $o-header-desktop-min: 1024px !default;
 // Width at which dropdown menu items fill the viewport width
 $o-header-dropdown-menu-items-breakpoint: 479px !default;
 
+// Width at which the height changes
+$o-header-height-breakpoint: $o-header-desktop-min !default;
 
 /// Theme: light
 

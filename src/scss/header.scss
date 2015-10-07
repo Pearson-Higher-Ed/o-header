@@ -44,7 +44,7 @@
 		clear: both;
 	}
 
-	@media (min-width: $o-header-desktop-min) {
+	@media (min-width: $o-header-height-breakpoint) {
 		min-height: $o-header-height;
 	}
 }
