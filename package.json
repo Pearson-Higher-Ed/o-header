@@ -4,7 +4,6 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
