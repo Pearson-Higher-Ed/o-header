@@ -27,6 +27,7 @@
 	a {
 		text-decoration: none;
 		color: $o-header-link-color;
+		outline-offset: -2px;
 
 		&:hover,
 		&:focus {
