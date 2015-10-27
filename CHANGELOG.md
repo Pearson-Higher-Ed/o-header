@@ -1,3 +1,18 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/Pearson-Higher-Ed/o-header/compare/v1.1.1...v1.2.0) (2015-10-27)
+
+
+### Bug Fixes
+
+* change logo element from <div> to <span> when it is within an <a> element ([b3a4a1d](https://github.com/Pearson-Higher-Ed/o-header/commit/b3a4a1d))
+* logo and tagline height for linked elements ([7dce04e](https://github.com/Pearson-Higher-Ed/o-header/commit/7dce04e))
+
+### Features
+
+* add $o-header-height-breakpoint Sass variable ([728b0f5](https://github.com/Pearson-Higher-Ed/o-header/commit/728b0f5))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/Pearson-Higher-Ed/o-header/compare/v1.1.0...v1.1.1) (2015-09-16)
 
