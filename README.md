@@ -74,7 +74,7 @@ To add the Pearson logo, use the following markup:
 ```html
 <div class="o-header__brand">
   <a href="https://pearson.com">
-    <div class="o-header__logo o-header__logo--pearson"></div>
+    <span class="o-header__logo o-header__logo--pearson"></span>
   </a>
 </div>
 ```
