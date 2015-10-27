@@ -3,6 +3,11 @@
 /// @link http://registry.origami.ft.com/components/o-header
 ////
 
+.o-header__logo,
+.o-header__tagline {
+	display: block;
+}
+
 .o-header__logo--pearson,
 .o-header__tagline--always-learning {
 	height: $o-header-height-mobile;
